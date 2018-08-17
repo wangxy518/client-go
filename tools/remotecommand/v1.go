@@ -29,8 +29,8 @@ import (
 
 // streamProtocolV1 implements the first version of the streaming exec & attach
 // protocol. This version has some bugs, such as not being able to detect when
-// non-interactive stdin data has ended. See http://issues.k8s.io/13394 and
-// http://issues.k8s.io/13395 for more details.
+// non-interactive stdin data has ended. See https://github.com/kubernetes/kubernetes/issues/13394 and
+// https://github.com/kubernetes/kubernetes/issues/13395 for more details.
 type streamProtocolV1 struct {
 	StreamOptions
 
